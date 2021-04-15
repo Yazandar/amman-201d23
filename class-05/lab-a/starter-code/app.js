@@ -53,13 +53,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
- let sum1 =((sum(a,b)[0])+c);
- let multiply1 =((multiply(a,b)[0])*c);
+ let sum1 =((sum(a,b)[0]));
+ let sum2 = ((sum(sum1,c)[0]));
+ let multiply1 =((multiply(a,b)[0]));
+ let multiply2 =((multiply(multiply1,c)[0]));
     
   let msg1 = "4 and 7 and 5 sum to 16.";
   let msg2 = "The product of 4 and 7 and 5 is 140.";;
   
-  return [sum1 ,multiply1 ,msg1,msg2];
+  return [sum2 ,multiply2 ,msg1,msg2];
  
 }
 
@@ -83,6 +85,7 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
 
+  
 }
 
 // Here is the test for sumArray(); uncomment it to run it
